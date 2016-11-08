@@ -23,10 +23,30 @@ h2{font-family:"Bank Gothic" "Franklin Gothic Heavy";
 ul{
   font-family:"Bank Gothic" "Franklin Gothic Heavy";
   font-size:25px; 
-  width: 20%;
+  max-width: 20%;
   margin: auto;
 }
 
-img{align:center;
-  height=250px;
+img{
+    margin-left: 40%;
+    text-align: center;
+}
+
+.rekt{
+    text-align: center;
+}
+
+.nav {
+    list-style-type: none;
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+}
+
+ol{
+  font-family:"Bank Gothic" "Franklin Gothic Heavy";
+  font-size:25px; 
+  max-width: 20%;
+  margin: auto;
+  list-style-type: none;
 }
