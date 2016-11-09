@@ -2,6 +2,14 @@
 <html>
 	<head>
 		<title>Breakout</title>
+		<table >
+      <tr>
+        <th><a href="https://perryma.tk/ChikkenNugget">HOME</a> </th>
+        <th><a href="https://perryma.tk/ChikkenNugget/breakout.html">RESTART</a></th>
+        
+        
+      </tr>
+    </table>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script type="text/javascript" src="https://static.codehs.com/gulp/cb01b4a22ffd3971572a8a1ab9f3b7c4cb17f383/chs-js-lib/chs.js"></script>
 		<script>
@@ -59,7 +67,7 @@ function ballMove(){
     }
     if(ball.getY()+BALL_RADIUS>getHeight()){
         stopTimer(ballMove);
-        var loseMessage = new Text("You Suck Holmes");
+        var loseMessage = new Text("You Lose");
         loseMessage.setPosition(getWidth()/2-100,getHeight()/2);
         loseMessage.setColor(Color.red);
         add(loseMessage);
@@ -80,7 +88,7 @@ function ballMove(){
     
     if(counter==80){
         stopTimer(ballMove);
-        var winText = new Text("You Win Holmes");
+        var winText = new Text("You Win!!");
         winText.setPosition(getWidth()/2-100,getHeight()/2);
         winText.setColor(Color.green);
         add(winText)
