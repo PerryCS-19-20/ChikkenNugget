@@ -52,4 +52,6 @@ table{
   background-color: lightblue;
   font-family: "BnkGothic.ttf";
   font-size: 25px;
+  text-decoration: none;
+  color: black;
 }
