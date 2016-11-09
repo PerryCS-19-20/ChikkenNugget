@@ -1,27 +1,27 @@
 h1 {
-  font-family:"BankGothic.ttf";
+  font-family:"Courier New";
   text-align: center;
   font-size:80px;
 }
 
-ul {font-family:"AmericanTypewriter.exe";
+ul {font-family:"Courier New";
   font-size:25px;
   width: 20%;
   margin: auto;
 }
 
-p{font-family:"AmericanTypewriter.exe";
+p{font-family:"Courier New";
   text-align:center; 
   font-size:25px;
 }
 
-h2{font-family:"BankGothic.ttf";
+h2{font-family:"Courier New";
   text-align: center;
   font-size:55px;
 }
 
 ul{
-  font-family:"BankGothic.ttf";
+  font-family:"Courier New";
   font-size:25px; 
   max-width: 20%;
   margin: auto;
@@ -39,7 +39,7 @@ ul{
 }
 
 ol{
-  font-family:"Bank Gothic.ttf";
+  font-family:"Courier New";
   font-size:25px; 
   max-width: 20%;
   margin: auto;
