@@ -39,9 +39,17 @@ ul{
 }
 
 ol{
-  font-family:"Bank Gothic" "Franklin Gothic Heavy";
+  font-family:"Bank Gothic.ttf";
   font-size:25px; 
   max-width: 20%;
   margin: auto;
   list-style-type: none;
+}
+
+table{
+  width:100%; 
+  text-align: center; 
+  background-color: lightblue;
+  font-family: "BnkGothic.ttf";
+  font-size: 25px;
 }
