@@ -1,27 +1,27 @@
 h1 {
-  font-family:"Bank Gothic" "Franklin Gothic Heavy";
+  font-family:"BankGothic.ttf";
   text-align: center;
   font-size:80px;
 }
 
-ul {font-family:"American Typewriter" "Courier New";
+ul {font-family:"AmericanTypewriter.exe";
   font-size:25px;
   width: 20%;
   margin: auto;
 }
 
-p{font-family:"AmericanTypewriter" "Courier New";
+p{font-family:"AmericanTypewriter.exe";
   text-align:center; 
   font-size:25px;
 }
 
-h2{font-family:"Bank Gothic" "Franklin Gothic Heavy";
+h2{font-family:"BankGothic.ttf";
   text-align: center;
   font-size:55px;
 }
 
 ul{
-  font-family:"Bank Gothic" "Franklin Gothic Heavy";
+  font-family:"BankGothic.ttf";
   font-size:25px; 
   max-width: 20%;
   margin: auto;
