@@ -47,11 +47,11 @@ ol{
 }
 
 table{
-  width:110%; 
+  width:100%; 
   text-align: center; 
   background-color: green;
   font-family: "BnkGothic.ttf";
-  font-size: 25px;
+  font-size: 35px;
   text-decoration: none;
   color: black;
 }
