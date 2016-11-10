@@ -28,7 +28,9 @@ ul{
 }
 
 .rekt{
-    text-align: center;
+  text-align: center;
+  height: 30px;
+  width: 60px;
 }
 
 .nav {
