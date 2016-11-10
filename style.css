@@ -50,7 +50,7 @@ table{
   width:100%; 
   text-align: center; 
   background-color: green;
-  font-family: "BnkGothic.ttf";
+  font-family: "Bank Gothic" "Courier New";
   font-size: 35px;
   text-decoration: none;
   color: black;
@@ -71,4 +71,9 @@ img{
 
 span{
   margin:10%;
+}
+
+#NoDec{
+  color: black
+  text-decoration: none
 }
