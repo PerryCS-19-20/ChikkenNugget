@@ -21,6 +21,14 @@ and open the template in the editor.
 		 function clicked() {
 				alert("Why did you click it?! Well.... no worries for there was no consequenses to your actions. Think twice next time as this might not be true the next time...");
 			}
+		
+			function mouseOver() {
+    document.getElementById("demo").style.color = "red";
+}
+
+function mouseOut() {
+    document.getElementById("demo").style.color = "black";
+}
         </script>
 	    
 	    <br>
@@ -29,6 +37,6 @@ and open the template in the editor.
 	    <br>
 	    <br>
 	    <br>
-	    <h2 onclick="clicked();"> You better not click this text!</h2>
+	    <h2 onmouseover="mouseOver()" onmouseout="mouseOut()onclick="clicked();> You better not click this text!</h2>
     </body>
 </html>
