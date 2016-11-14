@@ -5,8 +5,8 @@
                 <link rel="stylesheet" type="text/css" href="style.css">
 		<table >
       <tr>
-        <th><a href="https://perryma.tk/ChikkenNugget">HOME</a> </th>
-        <th><a href="https://perryma.tk/ChikkenNugget/breakout.html">RESTART</a></th>
+        <th><a id="blank" href="https://perryma.tk/ChikkenNugget">HOME</a> </th>
+        <th><a id="blank" href="https://perryma.tk/ChikkenNugget/breakout.html">RESTART</a></th>
         
         
       </tr>
@@ -28,10 +28,10 @@ var BRICK_WIDTH = SPACE_FOR_BRICKS / NUM_BRICKS_PER_ROW;
 var PADDLE_WIDTH = 80;
 var PADDLE_HEIGHT = 15;
 var PADDLE_OFFSET = 10;
-var randX = Randomizer.nextInt(-3.4,3.4);
-var randY = Randomizer.nextInt(1.9,3.4);
-var dx = randX;
-var dy = -randY;
+//var randX = Randomizer.nextInt(-3.4,3.4);
+//var randY = Randomizer.nextInt(1.9,3.4);
+var dx = 4;
+var dy = -3.2;
 
 
 var BALL_RADIUS = 15;
@@ -41,7 +41,7 @@ ball.setPosition(getWidth()/2,getHeight()-100);
 add(paddle);
 var a = 2;
 var counter = 0;
-var speed = Randomizer.nextInt(2,8);
+var speed = 5;
 
 
 function start(){
