@@ -34,6 +34,32 @@ ul{
   font-size: 20px;
   background-color:red;
   font-weight: bold;
+  display:block;
+  margin:0 auto;
+}
+
+.rekt2{
+  text-align: center;
+  color: white;
+  height: 60px;
+  width: 200px;
+  font-size: 20px;
+  background-color:black;
+  font-weight: bold;
+  display:block;
+  margin:0 auto;
+}
+
+.rekt3{
+  text-align: center;
+  color: white;
+  height: 60px;
+  width: 140px;
+  font-size: 20px;
+  background-color:black;
+  font-weight: bold;
+  display:block;
+  margin:0 auto;
 }
 
 .nav {
