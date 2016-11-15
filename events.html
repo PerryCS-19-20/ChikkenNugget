@@ -22,13 +22,20 @@ and open the template in the editor.
 				alert("Why did you click it?! Well.... no worries for there was no consequenses to your actions. Think twice next time as this might not be true the next time...");
 			}
 		
-			function mouseOver() {
-    document.getElementById("demo").style.color = "red";
-}
+                function mouseOver() {
+                    document.getElementById("demo").style.color = "white";
+                }
 
-function mouseOut() {
-    document.getElementById("demo").style.color = "black";
-}
+                function mouseOut() {
+                    document.getElementById("demo").style.color = "black";
+                }
+                function changeP(){
+                    var change = document.getElementById("change");
+                    var x = Math.floor((Math.random()*100)+1);
+                    var y = Math.floor((Math.random()*100)+1);
+                    change.style.top = x + "%";
+                    change.style.left= y + "%";
+                }
         </script>
 	    
 	    <br>
@@ -37,6 +44,12 @@ function mouseOut() {
 	    <br>
 	    <br>
 	    <br>
-	    <h2 onmouseover="mouseOver()" onmouseout="mouseOut()" onclick="clicked()"> You better not click this text!</h2>
+	    <h2 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()" onclick="clicked()"> You better not click this text!</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input class='que' id="change"type="button" onclick ="changeP();" value="Dont Click This Either"/>
     </body>
 </html>

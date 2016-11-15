@@ -110,3 +110,16 @@ span{
   color: white;
   text-decoration: none;
 }
+
+#bigger{
+    width:230px;
+}
+
+#change{
+    position:absolute;
+    align: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width:230px;
+}
