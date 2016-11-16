@@ -91,7 +91,6 @@ table{
 
 img{
     height: 250px;
-    align: center;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -104,6 +103,8 @@ img{
 
 span{
   margin:10%;
+  color: pink;
+  
 }
 
 #blank{
