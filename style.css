@@ -85,8 +85,8 @@ table{
   font-size: 35px;
   text-decoration: none;
   color: black;
-  width= 110%;
-  margin-left= -5%;
+  <!--width:110%; -->
+  <!-- margin-left:-5%; -->
 }
 
 img{
@@ -103,7 +103,6 @@ img{
 
 span{
   margin:10%;
-  color: pink;
   
 }
 
