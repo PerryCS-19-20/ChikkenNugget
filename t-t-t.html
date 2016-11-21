@@ -37,10 +37,19 @@ and open the template in the editor.
           </table>
             
             <script>
-                var counter = 0;
+                var player = X;
                 function playX(x) {
                  var cell = document.getElementById(x);
-                 cell.textContent="X";   
+                 cell.textContent="X";
+                 if(player== X){
+                     cell.textContent="X";
+                     var player = O;
+                 }
+                 if(player== O){
+                     cell.textContent="O";
+                     var player = X;
+                 }
+                    
                     
                 }
             </script>
