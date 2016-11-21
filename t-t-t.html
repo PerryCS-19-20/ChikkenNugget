@@ -1,0 +1,49 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <table >
+          <tr>
+            <th><a id="blank" href="https://perryma.tk/ChikkenNugget">HOME</a> </th>
+            <th><a id="blank" href="https://perryma.tk/ChikkenNugget/javafun.html">BACK</a> </th>
+          </tr>
+        </table>
+        <title>Tic-Tac-Toe</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body style="background-color:olivedrab;">
+        <table style="background-color:white;">
+            <tr>
+            <td  id="1" onclick="playX(1);"></td>
+            <td  id="2" onclick="playX(2);"></td>
+            <td  id="3" onclick="playX(3);"></td>
+            </tr>
+            
+            <tr>
+            <td  id="4" onclick="playX(4);"></td>
+            <td  id="5" onclick="playX(5);"></td>
+            <td  id="6" onclick="playX(6);"></td>
+            </tr>
+            
+            <tr>
+            <td  id="7" onclick="playX(7);"></td>
+            <td  id="8" onclick="playX(8);"></td>
+            <td  id="9" onclick="playX(9);"></td>
+            </tr>
+          </table>
+            
+            <script>
+                var counter = 0;
+                function playX(x) {
+                 var cell = document.getElementById(x);
+                 cell.textContent="X";   
+                    
+                }
+            </script>
+        
+    </body>
+</html>
