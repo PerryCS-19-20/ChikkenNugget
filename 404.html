@@ -4,11 +4,30 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <h1>YOU SEEM TO BE LOST!</h1>
     </head>
-    <body style="background-color:olivedrab; text-align: center;">
+    <body style="background-color:olivedrab; text-align: center;" onload="playAudio()">
+        <script>
+        var x = document.getElementById("myAudio"); 
+
+        function playAudio() { 
+            x.play(); 
+        } 
+         
+        function goBack() {
+            window.history.back();
+        }
+
+        </script>
+        <audio id="myAudio">
+            <source src="SpaceJam.mp3" type="audio/mpeg">
+        </audio>
         <img src="Deport.jpg">
         <h2>Go back before Trump deports you from this page!</h2>
+
         <input class='rekt' type="button" onclick ="location.href='https://perryma.tk/ChikkenNugget';" value="GO BACK"/>
         <audio controls>
             <source src="SpaceJam.mp3" type="audio/mpeg">
         </audio>
+
+        <input class='rekt' type="button" onclick ="goBack();" value="GO BACK"/>
+
 </html>

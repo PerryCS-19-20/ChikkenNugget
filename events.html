@@ -31,6 +31,13 @@ and open the template in the editor.
                 function mouseOut() {
                     document.getElementById("demo").style.color = "black";
                 }
+		function mouseOverH() {
+                    document.getElementById("dome").style.color = "white";
+                }
+
+                function mouseOutH() {
+                    document.getElementById("dome").style.color = "black";
+                }
                 function changeP(){
                     var change = document.getElementById("change");
                     var x = Math.floor((Math.random()*100)+1);
@@ -38,8 +45,18 @@ and open the template in the editor.
                     change.style.top = x + "%";
                     change.style.left= y + "%";
                     if (counter== 4){
+
                     change.value = "Stop Pressing!"
                     } 
+
+			change.value = "Stop Presing!";
+		    }
+		    if (counter== 6){
+			change.onclick = "location.https://perryma.tk/ChikkenNugget/javafun.html";
+			change.width = 300;
+			change.value = "OK you deserve this";
+		    }
+
                     counter++;
                 }
         </script>
@@ -57,7 +74,7 @@ and open the template in the editor.
             <br>
             <br>
             <br>
-            <h2 id="dome" onmouseover="mouseOver()" onmouseout="mouseOut()" onclick="location.href='https://perryma.tk/ChikkenNugget/harpur.html'"> Definitely don't click THIS text</h2>
+            <h2 id="dome" onmouseover="mouseOverH()" onmouseout="mouseOutH()" onclick="location.href='https://perryma.tk/ChikkenNugget/harpur.html'"> Definitely don't click <b>THIS</b> text</h2>
             <br>
             <br>
             <br>
