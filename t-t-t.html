@@ -16,7 +16,12 @@ and open the template in the editor.
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body style="background-color:olivedrab;">
-        <table style="background-color:white;">
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <table  id ="ttt"style="background-color:white;">
             <tr>
             <td  id="1" onclick="playX(1);"></td>
             <td  id="2" onclick="playX(2);"></td>
@@ -37,22 +42,28 @@ and open the template in the editor.
           </table>
             
             <script>
-                var player = X;
+                var player = "X";
                 function playX(x) {
                  var cell = document.getElementById(x);
-                 cell.textContent="X";
-                 if(player== X){
-                     cell.textContent="X";
-                     var player = O;
-                 }
-                 if(player== O){
-                     cell.textContent="O";
-                     var player = X;
-                 }
-                    
-                    
+                 
+                 
+                 if(cell.textContent===""){
+                     cell.textContent=player;
+                     if(player==="X"){
+                         
+                         player= "O";
+                     }else{
+                        
+                         player="X";
+                     }      
+                 } 
                 }
             </script>
         
     </body>
 </html>
+
+
+
+
+

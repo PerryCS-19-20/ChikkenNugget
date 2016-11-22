@@ -5,18 +5,7 @@
         <h1>YOU SEEM TO BE LOST! :D</h1>
     </head>
     <body style="background-color:olivedrab; text-align: center" onload="playAudio()">
-        <script>
-        var x = document.getElementById("myAudio"); 
-
-        function playAudio() { 
-            x.play(); 
-        } 
-         
-        function goBack() {
-            window.history.back();
-        }
-
-        </script>
+      
         <audio id="myAudio">
             <source src="SpaceJam.mp3" type="audio/mpeg">
         </audio>
@@ -26,5 +15,19 @@
         <input class='rekt' type="button" onclick ="location.href='https://perryma.tk/ChikkenNugget';" value="HOME"/>
 
         <input class='rekt' type="button" onclick ="goBack();" value="GO BACK"/>
+        
+        <script>
+            var x = document.getElementById("myAudio"); 
+
+            function playAudio() { 
+                x.play(); 
+            } 
+
+            function goBack() {
+                window.history.back();
+            }
+
+        </script>
+    </body>
 
 </html>
