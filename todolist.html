@@ -19,7 +19,8 @@ and open the template in the editor.
             function gotClicked(){
                     var x = document.getElementById(hit);
                     var y = document.getElementById(newAW);
-                x.change
+                x.textColor=white;
+                newAW.textContent="The white color means that the task has been completed!";
             }
         </script>
         <br>
@@ -44,7 +45,11 @@ and open the template in the editor.
             <li>Give Pets Attention</li>
             <li>Clean Room</li>
             <li>Sweep Floor</li>
-            <li>Click That Button Up There</li>
+            <li id="hit">Click That Button Up There</li>
         </ul>
+        <br>
+        <br>
+        <br>
+        <h3 style="font-size:20px; text-align: centered; margin = 30%;"></h3>
     </body>
 </html>
