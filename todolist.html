@@ -17,10 +17,8 @@ and open the template in the editor.
     <body style="background-color:olivedrab;">
         <script>
             function gotClicked(){
-                    var x = document.getElementById(hit);
-                    var y = document.getElementById(newAW);
-                x.color=white;
-                newAW.textContent="The white color means that the task has been completed!";
+                document.getElementById("hit").style.color="white";
+                document.getElementById("newAW").textContent="The white color means that the task has been completed!";
             }
         </script>
         <br>
@@ -32,11 +30,11 @@ and open the template in the editor.
         <br>
         <h2>Type anything you'd like!</h2>
         
-        <textarea rows="20" cols="100" id="img" style="text-size:20px;" ></textarea>
+        <textarea rows="20" cols="100" id="img" style="font-size:20px;" ></textarea>
         <br>
         <br>
         <br>
-        <button id="rekt" onclick='gotClicked()'>CLICK ME</button>
+        <input class='rekt' type="button" onclick ="gotClicked();" value="CLICK ME"/>
         <br>
         <br>
         <br>
@@ -48,8 +46,6 @@ and open the template in the editor.
             <li id="hit">Click That Button Up There</li>
         </ul>
         <br>
-        <br>
-        <br>
-        <h3 id="newAW" style="font-size:20px; text-align: centered; margin = 30%;"></h3>
+        <h3 id="newAW" style="font-size:20px; text-align: center; margin: 10%;"> </h3>
     </body>
 </html>

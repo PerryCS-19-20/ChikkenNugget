@@ -42,12 +42,14 @@ and open the template in the editor.
           </table>
             
             <script>
+                var won=false;
+                var player = "O";
                 var player = "X";
                 function playX(x) {
                  var cell = document.getElementById(x);
                  
                  
-                 if(cell.textContent===""){
+                 if((cell.textContent==="") && (won=== false)){
                      cell.textContent=player;
                      if(player==="X"){
                          check();
@@ -70,16 +72,14 @@ and open the template in the editor.
                 }
                 
                 function check3(c1,c2,c3){
-                    var won;
                     var L1 = document.getElementById(c1);
                     var L2 = document.getElementById(c2);
                     var L3 = document.getElementById(c3);
                     
                     if(L1.textContent===L2.textContent && L2.textContent===L3.textContent && L1.textContent!==""){
                         won=true;
-                    }
                     
-                    if(won===true){
+                    
                         L1.style.backgroundColor="#FF6347";
                         L2.style.backgroundColor="#FF6347";
                         L3.style.backgroundColor="#FF6347";

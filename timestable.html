@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+         <table >
+           <tr>
+             <th><a id="blank" href="https://perryma.tk/ChikkenNugget">HOME</a> </th>
+             <th><a id="blank" href="https://perryma.tk/ChikkenNugget/javafun.html">BACK</a> </th>
+           </tr>
+         </table>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Times Table</title>
+        <style>
+            table, td, th {
+                border: solid 1px;
+            }
+            td {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body onload="buildTimesTable();" style="background-color:olivedrab;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <script>
+        function buildTimesTable() {
+
+            var tab = document.createElement("table");
+            tab.id = "timesTable";
+
+
+            // Add the table to the document's body
+            var body = document.body;
+            body.appendChild(tab);
+
+            // Fill in the multiplication tablefor( i=0;i<10; i++){
+            for (i = 0; i < 11; i++) {
+
+                var row = document.createElement("tr");
+                row.id = "newCol";
+                tab.appendChild(row);
+
+
+                for (j = 0; j < 11; j++) {
+                    var col;
+
+                    if (i === 0) {
+                        col = document.createElement("th");
+                        col.textContent = j;
+                        
+                    } else {
+
+                        if (j === 0) {
+                            col = document.createElement("th");
+                            col.textContent = i;
+                        } else {
+                            col = document.createElement("td");
+                            col.textContent = i * j;
+                        }
+                    }
+                    row.appendChild(col);
+                    col.id = "newCol";
+
+
+
+                }
+
+            }
+        }
+        </script>
+    </body>
+</html>
