@@ -20,6 +20,16 @@ and open the template in the editor.
                 document.getElementById("hit").style.color="white";
                 document.getElementById("newAW").textContent="The white color means that the task has been completed!";
             }
+            
+            function otherClick(){
+                var userInput = document.getElementById("first");
+                var newItem = document.getElementById("second");
+                for(var i = 0; i<100; i++){
+                    
+                    newItem.textContent = newItem.textContent+("I will not " + userInput.value + "...           ");
+                    
+                }
+            }
         </script>
         <br>
         <br>
@@ -30,9 +40,11 @@ and open the template in the editor.
         <br>
         <h2>Type anything you'd like!</h2>
         
-        <textarea rows="20" cols="100" id="img" style="font-size:20px;" ></textarea>
+        <textarea rows="20" cols="50" id="first"  style="font-size:20px;" ></textarea>
+        <textarea rows="20" cols="50" id="second" style="font-size:20px;" ></textarea>
         <br>
         <br>
+        <input class='rekt' id="99" type="button" onclick ="otherClick()" value="COPY TEXT"/>
         <br>
         <input class='rekt' type="button" onclick ="gotClicked();" value="CLICK ME"/>
         <br>
@@ -46,6 +58,6 @@ and open the template in the editor.
             <li id="hit">Click That Button Up There</li>
         </ul>
         <br>
-        <h3 id="newAW" style="font-size:20px; text-align: center; margin: 10%;"> </h3>
+        <h3 id="newAW" style=" font-size:20px; text-align: center; margin: auto;"> </h3>
     </body>
 </html>

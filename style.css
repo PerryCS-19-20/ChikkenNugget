@@ -148,6 +148,8 @@ table{
 #timesTable{
     border: solid 1px;
     width:auto;
+    display:block;
+    margin:0 auto;
 }
 
 #newCol{
@@ -157,6 +159,10 @@ table{
     height:50px;
     font-size:1em;
     
+}
+
+#99{
+    width: 160px;
 }
 
 
