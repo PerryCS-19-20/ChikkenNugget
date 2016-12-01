@@ -84,7 +84,21 @@ function ballMove(){
     if(elem2 != null){
         dy = -dy;
         remove(elem2);
-        counter++
+        counter++;
+    }else{
+	    var elem3 = getElementAt(ball.get()-BRICK_SPACING, ball.getY()-BALL_RADIUS);
+	  if(elem3 != null){
+		dy = -dy;
+		remove(elem3);
+		counter++;  
+	  }else{
+		var elem4 = getElementAt(ball.getX()+BRICK_SPACING, ball.getY()-BALL_RADIUS);	
+		if(elem4 != null){
+			dy = -dy;
+			remove(elem4);
+			counter++;
+		}
+	  }
     }
     
     if(counter==80){
