@@ -1,0 +1,41 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Dodecahedron Volume Calc</title>
+        <script>
+            function calc() {
+                var a = parseFloat(document.getElementById("length").value);
+                
+                var vol = document.getElementById("vol");
+
+
+                          // Calculate area of bottom circle
+                vol.value = (7.663118961*Math.pow(a,3)).toFixed(2);   // Show volume of cylinder to 2 decimal places
+            }
+        </script>
+        <style>
+            input[type=number] {
+            width: 64px;
+            }
+        </style>
+        </head>
+        <body style="background-color:olivedrab">
+            <h1>Dodecahedron volume:</h1>
+            <img src="dodecahedron.png" style="float: left; height: 150px; margin-right: 5px;">
+            <h2>((15+7&Sqrt;5)/4)a<sup>3</sup></h2>
+
+            a: <input type="number" id="length" placeholder="height"><br>
+            
+            <button onclick="calc();">Calculate</button>
+            <hr>
+            v: <input type="output" id="vol" placeholder="volume" readonly>
+        </body>
+    </html>
+
