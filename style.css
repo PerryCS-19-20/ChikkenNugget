@@ -165,4 +165,22 @@ table{
     width: 160px;
 }
 
+.inputV{
+margin:0 auto;
+height: 40px;
+width: 100px;
+text-align: center;
+display: block;
+
+}
+
+.inputC{
+margin:0 auto;
+height: 30px;
+width: 75px;
+text-align: center;
+ display: block;
+ font-size: auto;
+}
+
 

@@ -27,8 +27,24 @@
         <br>
         <br>
         <br>
+                Table Width:<input type="range" id="tableWidth" min="1" max="20" value="10" onchange ="changeValueW();">
+                Table Width:<input type="range" id="tableHeight" min="1" max="20" value="10" onchange ="changeValueH();">
+                <button
+                <br>
         <br>
         <script>
+            //make the table delete the table and make a new one when the slider changes
+            var er =0;
+            var re = 0;
+            
+        function changeValueW(){
+            er= document.getElementById("tableWidth").value;
+        }
+        
+        function changeValueH(){
+            re= document.getElementById("tableHeight").value;
+        }
+        
         function buildTimesTable() {
 
             var tab = document.createElement("table");
@@ -40,14 +56,17 @@
             body.appendChild(tab);
 
             // Fill in the multiplication tablefor( i=0;i<10; i++){
-            for (i = 0; i < 11; i++) {
+            for (i = 0; i-er < 11; i++) {
 
                 var row = document.createElement("tr");
                 row.id = "newCol";
                 tab.appendChild(row);
-
-
-                for (j = 0; j < 11; j++) {
+                /*
+                if(textContent===0){
+                    textContent=" ";
+                }
+*/
+                for (j = 0; j-re < 11; j++) {
                     var col;
 
                     if (i === 0) {
