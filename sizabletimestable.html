@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,22 +16,37 @@
         
         <title>Times Table</title>
         
+        
     </head>
     <body onload="buildTimesTable();" style="background-color:olivedrab;">
         <br>
         <br>
-        <br>  
+        <br>
+                <input class="inputV" type="range" id="tableWidth" min="1" max="20" value="10" onchange ="buildTimesTable();">
+        <br>
+                <input class="inputV" type="range" id="tableHeight" min="1" max="20" value="10" onchange ="buildTimesTable();">
+                
+        <br>
+        <br>
         <br>
         <br>
         <script>
             //make the table delete the table and make a new one when the slider changes
+            var er =11;
+            var re = 11;
             
-            
-        
+        function changeValue(){
+            if (timesTable !== null) {
+                    timesTable.parentNode.removeChild("timesTable");        
+                }else{
+                er= document.getElementById("tableWidth").value;
+                re= document.getElementById("tableHeight").value;
+            }
+        }
         
         
         function buildTimesTable() {
-            
+            //changeValue();
             var tab = document.createElement("table");
             tab.id = "timesTable";
             
@@ -41,7 +57,7 @@
             body.appendChild(tab);
 
             // Fill in the multiplication tablefor( i=0;i<10; i++){
-            for (i = 0; i < 11; i++) {
+            for (i = 0; i < er; i++) {
 
                 var row = document.createElement("tr");
                 row.id = "newCol";
@@ -51,7 +67,7 @@
                     textContent=" ";
                 }
 */
-                for (j = 0; j < 11; j++) {
+                for (j = 0; j < re; j++) {
                     var col;
 
                     if (i === 0) {
@@ -63,14 +79,10 @@
                         if (j === 0) {
                             col = document.createElement("th");
                             col.textContent = i;
-                            if(col.value===0){
-                                col.textContent=" ";
-                            }
                         } else {
                             col = document.createElement("td");
                             col.textContent = i * j;
                         }
-                        
                     }
                     row.appendChild(col);
                     col.id = "newCol";
