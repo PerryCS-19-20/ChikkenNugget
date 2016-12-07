@@ -21,6 +21,11 @@ and open the template in the editor.
                 document.getElementById("newAW").textContent="The white color means that the task has been completed!";
             }
             
+            function clearClicked(){
+                var newItem = document.getElementById("second");
+                newItem.textContent = newItem.textContent+("");
+            }
+            
             function otherClick(){
                 var userInput = document.getElementById("first");
                 var newItem = document.getElementById("second");
@@ -45,6 +50,8 @@ and open the template in the editor.
         <br>
         <br>
         <input class='rekt' id="99" type="button" onclick ="otherClick()" value="COPY TEXT"/>
+        <br>
+        <input class='rekt' id="99" type="button" onclick ="clearClick()" value="CLEAR TEXT"/>
         <br>
         <input class='rekt' type="button" onclick ="gotClicked();" value="CLICK ME"/>
         <br>
