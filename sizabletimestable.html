@@ -32,21 +32,22 @@
         <br>
         <script>
             //make the table delete the table and make a new one when the slider changes
-            var er =11;
-            var re = 11;
+            var er =12;
+            var re = 12;
             
         function changeValue(){
+            var timesTable = document.getElementById("timesTable");
             if (timesTable !== null) {
-                    timesTable.parentNode.removeChild("timesTable");        
-                }else{
-                er= document.getElementById("tableWidth").value;
-                re= document.getElementById("tableHeight").value;
+                    timesTable.parentNode.removeChild(timesTable);        
             }
+            er= document.getElementById("tableWidth").value;
+            re= document.getElementById("tableHeight").value;
+            
         }
         
         
         function buildTimesTable() {
-            //changeValue();
+            changeValue();
             var tab = document.createElement("table");
             tab.id = "timesTable";
             
