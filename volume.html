@@ -9,6 +9,7 @@ and open the template in the editor.
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Dodecahedron Volume Calc</title>
+        <img src="dodecahedron.gif" style="float: left; height: 150px; margin-right: 5px;">
         <script>
             function calc() {
                 var a = parseFloat(document.getElementById("length").value);
@@ -28,12 +29,12 @@ and open the template in the editor.
         </head>
         <body style="background-color:olivedrab">
             <h1>Dodecahedron volume:</h1>
-            <img src="dodecahedron.gif" style="float: left; height: 150px; margin-right: 5px;">
+            
             <h2>((15+7&Sqrt;5)/4)a<sup>3</sup></h2>
 
             <input class="inputV" type="number" id="length" placeholder="height"><br>
             
-            <button class="inputC" onclick="calc();">Calculate</button>
+            <button class="inputC" id="esta" onclick="calc();">Calculate</button>
             <hr>
             <input class="inputV" type="output" id="vol" placeholder="volume" readonly>
         </body>
