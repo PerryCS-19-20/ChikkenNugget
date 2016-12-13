@@ -6,16 +6,19 @@ and open the template in the editor.
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
+        
         <title>Site Map</title>
-         <table>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    </head>
+    <body onload="buildMenu('menuBarDiv');" style="background-color: olivedrab">
+        <table>
           <tr>
             <th><a id="blank" href="https://perryma.tk/ChikkenNugget">HOME</a> </th>
           </tr>
         </table>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
-    </head>
-    <body style="background-color: olivedrab">
-        <ul>
+        <div id="menuBarDiv"></div>
+        <!--<ul>
             <li><a href="https://perryma.tk/ChikkenNugget" >HOME</a></li>
             <br>
             <li><a href="https://perryma.tk/ChikkenNugget/sitemap.html">SITE MAP</a></li><br>
@@ -37,6 +40,10 @@ and open the template in the editor.
                     <li><a href="https://perryma.tk/ChikkenNugget/sizabletimestable.html">SIZABLE TIMES TABLE</a></li><br>
                 </ul>
             </ul>
-        </ul>
+        </ul>-->
+        
+    <script type="text/javascript" src="menubar.js">
+        
+    </script>
     </body>
 </html>
