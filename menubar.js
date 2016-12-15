@@ -147,8 +147,8 @@ function buildMenu(x){
 }
 
 function changeMenu(){
-    var new = document.getElementById(li);
-    new.color= black;
+    var newChange = document.getElementById(li);
+    newChange.color= black;
 }
 
 //create var for a tag, use a.href=..., a.textContent="..."
