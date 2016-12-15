@@ -263,7 +263,7 @@ color: black;
 	color: white;
 }
 
-#blackList{
+#blackText{
     text-decoration: none;
     color: black;
     font-family:"Courier New";
@@ -271,4 +271,19 @@ color: black;
     
 }
 
+#greyText{
+    text-decoration: none;
+    color: #404040;
+    font-family:"Courier New";
+    margin:100%;
+    
+}
+
+#lightGreyText{
+    text-decoration: none;
+    color: #808080;
+    font-family:"Courier New";
+    margin:100%;
+    
+}
 
