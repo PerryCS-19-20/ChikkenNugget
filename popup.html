@@ -6,16 +6,12 @@ and open the template in the editor.
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <table >
-          <tr>
-            <th><a id="blank" href="https://perryma.tk/ChikkenNugget">HOME</a> </th>
-            <th><a id="blank" href="https://perryma.tk/ChikkenNugget/javafun.html">BACK</a> </th>
-          </tr>
-        </table>
+        
         <title>Pop-Up Message</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
-    <body style="background-color:olivedrab;">
+    <body onload="buildMenu('menubar');" style="background-color:olivedrab;">
+        <div id="menubar"></div>
         <br>
         <br>
         <br>
@@ -29,7 +25,7 @@ and open the template in the editor.
         
          <input id="img" class='rekt' type="button" onclick ="press()" value="Press Me!"/>
          
-         <script>
+         <script type="text/javascript" src="menubar.js">
              function press(){
                 alert("You pressed my button!");
              }
