@@ -200,8 +200,9 @@ root {
 	position: relative;
 	padding: 0px;
 	display: block;
-background-color: grey;
+background-color: darkgreen;
 width:100%;
+z-index: 1;
 }
 
 
@@ -235,8 +236,14 @@ text-indent: 0px;
 #menubar ul ul {
 	display: none;
 	position: absolute;
-background-color: lightgrey;
+background-color: green;
 padding: 0px;
+max-width:100%;
+    width: auto;
+}
+#menubar ul{
+    max-width:100% !important;
+    width: auto;
 }
 
 
@@ -251,7 +258,7 @@ padding: 0px;
 /* Make menu links look normal */
 #menubar a {
 	display: block;
-color: black;
+color: white;
 	padding: 8px;
 	text-decoration: none;
 }
@@ -259,31 +266,6 @@ color: black;
 
 /* Change the link color on hover */
 #menubar ul ul li a:hover {
-	background-color: grey;
-	color: white;
+	background-color: lightgreen;
+	color: black;
 }
-
-#blackText{
-    text-decoration: none;
-    color: white;
-    font-family:"Courier New";
-    margin:0%;
-    
-}
-
-#greyText{
-    text-decoration: none;
-    color: #404040;
-    font-family:"Courier New";
-    margin:0%;
-    
-}
-
-#lightGreyText{
-    text-decoration: none;
-    color: #808080;
-    font-family:"Courier New";
-    margin:0%;
-    
-}
-
