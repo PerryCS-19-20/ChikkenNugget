@@ -6,16 +6,12 @@ and open the template in the editor.
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <table>
-          <tr>
-            <th><a id="blank" href="https://perryma.tk/ChikkenNugget">HOME</a> </th>
-            <th><a id="blank" href="https://perryma.tk/ChikkenNugget/javafun.html">BACK</a> </th>
-          </tr>
-        </table>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body style="background-color:olivedrab;">
-        <script>
+        
+    <body onload="buildMenu('menubar');" style="background-color:olivedrab;">
+        <div id="menubar"></div>
+	 
+
+        <script type="text/javascript" src="menubar.js">
             function gotClicked(){
                 document.getElementById("hit").style.color="white";
                 document.getElementById("newAW").textContent="The white color means that the task has been completed!";
