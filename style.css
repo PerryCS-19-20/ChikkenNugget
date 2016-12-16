@@ -254,22 +254,6 @@ max-width:100%;
 	display: block;
 }
 
-#menubar li ul:hover li,
-#menubar li ul:focus li,
-#menubar li ul:active li {
-	display: block;
-	
-}
-
-#menubar li ul {
-	display: none;
-	position: absolute;
-background-color: green;
-padding: 0px;
-max-width:100%;
-    width: auto;
-
-
 /* Make menu links look normal */
 #menubar a {
 	display: block;
@@ -281,6 +265,6 @@ color: white;
 
 /* Change the link color on hover */
 #menubar ul ul li a:hover {
-	background-color: lightgreen;
+	background-color: green;
 	color: black;
 }
