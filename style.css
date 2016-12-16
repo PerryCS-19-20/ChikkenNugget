@@ -254,6 +254,21 @@ max-width:100%;
 	display: block;
 }
 
+#menubar li ul:hover li,
+#menubar li ul:focus li,
+#menubar li ul:active li {
+	display: block;
+	
+}
+
+#menubar li ul {
+	display: none;
+	position: absolute;
+background-color: green;
+padding: 0px;
+max-width:100%;
+    width: auto;
+
 
 /* Make menu links look normal */
 #menubar a {
