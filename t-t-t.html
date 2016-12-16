@@ -6,16 +6,12 @@ and open the template in the editor.
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <table >
-          <tr>
-            <th><a id="blank" href="https://perryma.tk/ChikkenNugget">HOME</a> </th>
-            <th><a id="blank" href="https://perryma.tk/ChikkenNugget/javafun.html">BACK</a> </th>
-          </tr>
-        </table>
+        
         <title>Tic-Tac-Toe</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
-    <body style="background-color:olivedrab;">
+    <body onload="buildMenu('menubar');" style="background-color:olivedrab;">
+        <div id="menubar"></div>
         <br>
         <br>
         <br>
@@ -41,7 +37,7 @@ and open the template in the editor.
             </tr>
           </table>
             
-            <script>
+            <script type="text/javascript" src="menubar.js">
                 var won=false;
                 var player = "O";
                 var player = "X";
