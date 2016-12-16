@@ -3,26 +3,23 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         
-         <table >
-           <tr>
-             <th><a id="blank" href="https://perryma.tk/ChikkenNugget">HOME</a> </th>
-             <th><a id="blank" href="https://perryma.tk/ChikkenNugget/tablelist.html">BACK</a> </th>
-             <th><a id="blank" href="https://perryma.tk/ChikkenNugget/javafun.html">JAVA FUN</a> </th>
-           </tr>
-         </table>
+         
         
         
         
         <title>Times Table</title>
         
     </head>
-    <body onload="buildTimesTable();" style="background-color:olivedrab;">
+    <body onload="buildTimesTable(); buildMenu('menubar');" style="background-color:olivedrab;">
+        <div id="menubar"></div>
+	  
+
         <br>
         <br>
         <br>  
         <br>
         <br>
-        <script>
+        <script type="text/javascript" src="menubar.js">
             //make the table delete the table and make a new one when the slider changes
             
             
