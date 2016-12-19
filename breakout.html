@@ -4,11 +4,13 @@
 		<title>Breakout</title>
                 <link rel="stylesheet" type="text/css" href="style.css">
 		
-		
+                <script type="text/javascript" src="menubar.js"></script>
 	</head>
-	<body onload="buildMenu('menubar');" style="background-color: olivedrab">
+	<body style="background-color: olivedrab">
 		<div id="menubar"></div>
-	  <script type="text/javascript" src="menubar.js"></script>
+                <br>
+                <br>
+                <br>
 
 		<div id="canvasContainer" width="100%" style="width: 100%; height: 100%; overflow: hidden;">
 			<canvas width="400" height="500" class="codehs-editor-canvas"></canvas>
@@ -17,6 +19,7 @@
 		<script type="text/javascript" src="https://static.codehs.com/gulp/cb01b4a22ffd3971572a8a1ab9f3b7c4cb17f383/chs-js-lib/chs.js"></script>
 		<script>
                       window.onload = function() {
+buildMenu('menubar');
 /* Constants for bricks */
 var NUM_ROWS = 8;
 var BRICK_TOP_OFFSET = 10;
