@@ -5,13 +5,14 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
+        <script type="text/javascript" src="menubar.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
         
     <body onload="buildMenu('menubar');" style="background-color:olivedrab;">
         <div id="menubar"></div>
 	 
 
-        <script type="text/javascript" src="menubar.js">
+        <script>
             function gotClicked(){
                 document.getElementById("hit").style.color="white";
                 document.getElementById("newAW").textContent="The white color means that the task has been completed!";

@@ -197,6 +197,7 @@ root {
 
 /* div or span that contains the menu list */
 #menubar {
+    white-space: nowrap;
 	position: relative;
 	padding: 0px;
 	display: block;
@@ -208,6 +209,7 @@ z-index: 1;
 
 /* class on a list that makes up the menu */
 #menubar > ul {
+    white-space: nowrap;
 	position: relative;
 	display:  inline-block;
 	text-decoration: none;
@@ -236,7 +238,7 @@ text-indent: 0px;
 #menubar ul ul {
 	display: none;
 	position: absolute;
-background-color: lightgreen;
+background-color: lime;
 padding: 0px;
 max-width:100%;
     width: auto;
